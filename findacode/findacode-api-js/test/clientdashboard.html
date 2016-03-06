@@ -1,0 +1,44 @@
+<?
+  include( '_header.php' );
+?>
+  <link type="text/css" href="/widgets/v2/src/widgets/clientdashboard/clientdashboard.css" rel="Stylesheet" />
+  <script src="/widgets/v2/src/widgets/clientdashboard/clientdashboard.js" ></script>
+  <script type="text/javascript">
+		FAC(function(){
+			FAC.init({
+        api: 'http://api-dev.findacode.com/v2/',
+        userType: 'client'
+      });
+			FAC('#wrapper').clientdashboard({
+        'cells':[
+          {
+            'type':'sales',
+            'position':{x:0,y:0},
+            'href':'/sales'
+          },
+          {
+            'type':'traffic',
+            'position':{x:1,y:0},
+            'href':'/traffic'
+          },
+          {
+            'type':'users',
+            'position':{x:2,y:1},
+            'href':'/users'
+          }
+        ]
+      });
+		});
+  </script>
+	<style>
+		body {
+			font-size: 16px;
+      width: 600px;
+      margin: auto;
+		}
+	</style>
+  <br><br>
+  <div id="wrapper"></div>
+<?
+  include( '_footer.php' );
+?>

@@ -1,0 +1,26 @@
+<?
+  include( '_header.php' );
+?>
+  <link type="text/css" href="/widgets/v2/src/widgets/clientproductlist/clientproductlist.css" rel="Stylesheet" />
+  <link type="text/css" href="/widgets/v2/src/widgets/clientproductinfo/clientproductinfo.css" rel="Stylesheet" />
+  <script src="/widgets/v2/src/widgets/clientproductlist/clientproductlist.js" ></script>
+  <script src="/widgets/v2/src/widgets/clientproductinfo/clientproductinfo.js" ></script>
+  <script type="text/javascript">
+		FAC(function(){
+			FAC.init({
+        api: 'http://api-dev.findacode.com/v2/'
+      });
+			FAC('#wrapper').clientproductlist({});
+		});
+  </script>
+	<style>
+		body {
+			font-size: 16px;
+      width: 800px;
+      margin: auto;
+		}
+	</style>
+  <div id="wrapper"></div>
+<?
+  include( '_footer.php' );
+?>

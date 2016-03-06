@@ -1,0 +1,27 @@
+.fac-codeactions-icon-wrap {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.fac-codeactions-menu .fac-codeactions-icon-wrap {
+  margin-right: .25em;
+}
+
+.fac-codeactions-menu-wrap {
+  position: absolute;
+  display: none;
+}
+
+.fac-codeactions-menu-item {
+  padding: .25em;
+  cursor: pointer;
+}
+
+.fac-codeactions-button-wrap {
+  display: inline-block;
+}
+
+.fac-codeactions-button-wrap .fac-codeactions-icon-wrap {
+  margin-left: .125em;
+}

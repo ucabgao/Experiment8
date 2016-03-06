@@ -1,0 +1,20 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>writer</title>
+  <link rel="stylesheet" href="writer.css" />
+  <script src="scripts/modernizr.js"></script>
+  <script src="scripts/writer.js"></script>
+  <script src="scripts/writer_features.js"></script>
+</head>
+<body>
+    <h1>Error</h1>
+    <p>Unfortunately, writer requires a number of features your browser doesn't support:</p>
+    <ul id="features"></ul>
+
+    <script>
+    // TODO:: Handle detection more cleanly, move this back into <head>
+    window.onload = writer.features.listMissingFeatures();
+  </script>
+</body>

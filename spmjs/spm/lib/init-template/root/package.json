@@ -1,0 +1,28 @@
+{
+  "name": "{%= name %}",
+  "version": "{%= version %}",
+  "description": "{%= description %}",
+  "keywords": [],
+  "homepage": "{%= homepage %}",
+  "author": "{%= author %}",
+  "repository": {
+    "type": "git",
+    "url": "{%= repository %}"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": "MIT",
+  "spm": {
+    "main": "index.js",
+    "dependencies": {
+    },
+    "devDependencies": {
+      "expect.js": "0.3.1"
+    },
+    "engines": {
+      "seajs": "2.2.1"
+    },
+    "tests": "tests/*.js"
+  }
+}

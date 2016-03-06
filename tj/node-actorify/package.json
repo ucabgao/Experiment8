@@ -1,0 +1,26 @@
+{
+  "name": "actorify",
+  "version": "0.1.0",
+  "repository": "visionmedia/node-actorify",
+  "description": "Turn any duplex stream into an actor",
+  "keywords": [
+    "actor",
+    "messaging",
+    "message",
+    "zmq",
+    "zeromq",
+    "erlang"
+  ],
+  "dependencies": {
+    "amp": "0.3.1",
+    "ms": "~0.6.1",
+    "amp-message": "0.1.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "matcha": "~0.4.0",
+    "humanize-number": "0.0.1"
+  },
+  "license": "MIT"
+}

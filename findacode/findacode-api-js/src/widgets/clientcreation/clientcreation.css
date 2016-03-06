@@ -1,0 +1,13 @@
+.fac-clientcreation label { display: block; }
+.fac-clientcreation>.ui-widget-content { padding: .5em; overflow: auto; }
+.fac-clientcreation .section-header { padding: .4em; margin-top: 1em; }
+.fac-clientcreation span.label { display: inline-block; width: 130px; }
+.fac-clientcreation .user-wrap { margin-top: 1em; }
+.fac-clientcreation .user-row { overflow: auto; }
+.fac-clientcreation .user-row div { padding: .4em }
+.fac-clientcreation .user-th, .fac-clientcreation .user-td { float: left; width: 20%; }
+.fac-clientcreation .user-row input.user-info { width: 100%; margin-left: -2px; }
+.fac-clientcreation .create-button { float: right; }
+.fac-clientcreation-messages { padding: 0 .4em; margin-top: 1em; display: none; }
+.clientcreation-message { margin: .4em 0; padding: .4em; } 
+.clientcreation-message ul { margin-top: 0; margin-bottom: 0; }

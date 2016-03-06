@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>test page</title>
+
+		{{asset "css"}}
+		{{asset "html5shiv"}}
+	</head>
+	<body>
+		<can-import from="./progressive/routes"/>
+		<can-import from="progressive/appstate" as="viewModel" />
+		<can-import from="progressive/main.css!"/>
+
+		{{#eq page "home"}}
+			<div id="home">You are {{page}}</div>
+		{{/eq}}
+
+		{{#eq page "orders"}}
+			<can-import from="progressive/orders/">
+				{{#eq state "resolved"}}
+					<order-history></order-history>
+				{{/eq}}
+			</can-import>
+		{{/eq}}
+
+		{{^eq statusCode 200}}
+			<div>Error: {{statusMessage}}</div>
+		{{/eq}}
+
+		{{#if param}} {{param}} {{/if}}
+
+		{{#if err}} {{throwError}} {{/if}}
+
+		{{#if request}}
+			<div>Showing: {{request.url}}</div>
+		{{/if}}
+
+		{{asset "inline-cache"}}
+	</body>
+</html>

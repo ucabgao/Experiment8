@@ -1,0 +1,103 @@
+//@import "base";
+
+/* feat: before angular is ready, display loading animation */
+body.waiting-for-angular div#content-outer {
+  display: none;
+}
+body.waiting-for-angular div#initializing-panel {
+  display: block;
+  // TODO: THIS IS BROKEN BUT NOT USED
+  background: image-url("angular-auth/loading.gif") center center no-repeat;
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+#login-holder {
+  // TODO: FIX WHEN USED AGAIN
+  @include gradient("radial", #FEFEFE , #EEEEEE);
+
+  // login is not needed until requested
+  display: none;
+
+  position: absolute;
+  top: 62px;
+  left: 0;
+  margin-bottom: $footer-height;
+
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  padding-bottom: 5px;
+}
+#loginbox {
+  margin: 50px auto 0 auto;
+
+  @extend .rounded-corners;
+
+  height: 312px;
+  line-height: 12px;
+  padding: $standard-padding;
+  position: relative;
+  width: 508px;
+}
+
+#loginboxclose{
+  position:absolute;
+  top:10px;
+  right:10px;
+  //font-weight: bold;
+  //font-size: 16px;
+  //font-family: sans-serif;
+  //text-decoration: none;
+}
+
+#login-inner {
+  font-family: Tahoma;
+  font-size: 13px;
+  line-height: 12px;
+  margin: 0 auto;
+  width: 310px;
+  text-align: center;
+
+  & ul {
+    margin: 0 0 0 -110px;
+    padding: 0;
+    list-style: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    width: 515px;
+
+    & li {
+      padding: 0;
+      margin: $standard-margin-vertical 20px;
+      width: 170px;
+      display: inline-block;
+
+      & a {
+        width: 100%;
+        font-weight: bold;
+
+
+        span {
+          color: white;
+
+        }
+      }
+
+      & .persona-button {
+        width: 200px;
+      }
+    }
+  }
+
+  & label {
+  }
+
+  & input[type="submit"] {
+    cursor: pointer;
+    display: block;
+  }
+}

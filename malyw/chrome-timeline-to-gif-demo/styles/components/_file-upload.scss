@@ -1,0 +1,39 @@
+// global class on browser windows dragover
+.dragover {
+  opacity: 0.5;
+}
+
+.file-input-wrapper {
+  .file-input-button {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  input[type=file] {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
+  }
+
+  .label-wrapper{
+    @include media($smaller: 'phoneLandscape') {
+      display: block;
+    }
+  }
+
+  .label {
+    white-space: normal;
+
+    @include media($bigger: 'phoneLandscape') {
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "version": "@@versionNumber",
+  "name": "@@appName",
+  "description": "@@appDescription",
+  "icons": {
+    "32": "/assets/images/icons/icon-32.png",
+    "60": "/assets/images/icons/icon-60.png",
+    "64": "/assets/images/icons/icon-64.png",
+    "90": "/assets/images/icons/icon-90.png",
+    "120": "/assets/images/icons/icon-120.png",
+    "128": "/assets/images/icons/icon-128.png",
+    "256": "/assets/images/icons/icon-256.png"
+  },
+  "developer": {
+    "name": "@@developerName",
+    "url": "@@developerUrl"
+  },
+  "launch_path": "/index.html",
+  "installs_allowed_from": ["https://marketplace.firefox.com", "*"],
+  "type": "privileged",
+  "permissions": {
+    "audio-channel-content": {
+      "description": "Required to play audio in the background."
+    },
+    "storage": {
+      "description": "Required to store podcast audio files and images."
+    },
+    "systemXHR": {
+      "description": "Required to download podcasts."
+    }
+  },
+  "default_locale": "en",
+  "locales": {
+    "eo": {
+      "name": "Podkastoj",
+      "description": "Aŭskulti al viaj preferataj podkastoj en viaj HTML5-e funkciigitaj aparatoj aŭ retumiloj.",
+      "permissions": {
+        "audio-channel-content": {
+          "description": "Bezonata por ludi sonon fone."
+        },
+        "storage": {
+          "description": "Bezonata por konservi sondosierojn kaj bildojn de podkastoj."
+        },
+        "systemXHR": {
+          "description": "Bezonata por elŝuti podkastojn."
+        }
+      }
+    },
+    "it": {
+      "name": "Podcast",
+      "description": "Ascolta i tuoi podcast preferiti sul tuo apparecchio o browser basati su HTML5.",
+      "permissions": {
+        "audio-channel-content": {
+          "description": "Necessario per far funzionare l'audio in background."
+        },
+        "storage": {
+          "description": "Necessario per salvare audio e immagini dei podcast."
+        },
+        "systemXHR": {
+          "description": "Necessario per scaricare i podcast."
+        }
+      }
+    }
+  }
+}

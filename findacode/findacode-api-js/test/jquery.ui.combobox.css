@@ -1,0 +1,4 @@
+.ui-combobox { position: relative; display: inline-block; margin-right: 2.2em; }
+.ui-combobox .ui-button { position: absolute; top: 0; bottom: 0; margin-left: -1px; padding: 0; }
+.ui-autocomplete-input { margin: 0; padding: 0.3em; }
+.ui-autocomplete { max-height: 138px; overflow-y: auto; }

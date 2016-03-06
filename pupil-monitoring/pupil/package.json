@@ -1,0 +1,28 @@
+{
+  "name" : "pupil",
+  "version" : "0.0.1",
+  "description" : "Real time monitoring tool for metrics",
+  "keywords": [
+    "monitoring",
+    "metrics",
+    "real-time graphs"
+  ],
+  "author" : {
+    "name": "Trygve Vea",
+    "email": "trygve.vea@gmail.com",
+    "web": "http://www.trygvevea.com",
+    "twitter": "kvisle"
+  },
+  "license": "MIT",
+  "dependencies" : {
+    "websocket" : "*",
+    "express": "3.0.0",
+    "ejs": "*"
+  },
+  "scripts": {
+    "test": "vows test/*.js --spec"
+  },
+  "devDependencies": {
+    "vows": "0.5.x"
+  }
+}

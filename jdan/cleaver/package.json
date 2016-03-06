@@ -1,0 +1,37 @@
+{
+  "name": "cleaver",
+  "preferGlobal": true,
+  "version": "0.7.6",
+  "author": "Jordan Scales <scalesjordan@gmail.com>",
+  "description": "30-second slideshows for hackers",
+  "keywords": [
+    "markdown",
+    "static",
+    "slideshow",
+    "presentation"
+  ],
+  "bin": {
+    "cleaver": "./bin/cleaver"
+  },
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdan/cleaver.git"
+  },
+  "dependencies": {
+    "commander": "~2.1.0",
+    "debug": "^2.1.1",
+    "highlight.js": "~9.0.0",
+    "js-yaml": "2.1.0",
+    "marked": "~0.2.9",
+    "mustache": "0.7.0",
+    "q": "0.9.6"
+  },
+  "devDependencies": {
+    "jshint": "~2.3.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jshint lib/ resources/script.js bin/cleaver"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,25 @@
+<?
+  include( '_header.php' );
+?>
+  <script type="text/javascript">
+    FAC.events.on('test-setup', function(){
+      FAC('#search').search();
+    });
+    
+    FAC.events.on('test-destroy', function(){
+      FAC('#search').search('destroy');
+    });
+  </script>
+  <style>
+    body {
+      font-size: 16px;
+    }
+    #search {
+      width: 600px;
+      margin: auto;
+    }
+  </style>
+  <div id="search"></div>
+<?
+  include( '_footer.php' );
+?>

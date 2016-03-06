@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Pupil at <%= hostname %></title>
+<link type="text/css" rel="stylesheet" href="css/rickshaw.pupil.css">
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 10pt;
+}
+#wrap {
+  margin: 0 0;
+  height: auto
+}
+#leftcol {
+  float: left;
+  width: 200px;
+  height: 100%;
+}
+#grapharea {
+  position: absolute;
+  left: 200px;
+}
+#leftcol a {
+  display: block;
+  padding-left: 10px;
+  color: Blue;
+  text-decoration: none;
+}
+
+#leftcol a:hover {
+  color: Navy;
+  text-decoration: none;
+}
+div.container {
+  width: 1020px;
+}
+div.graph {
+  width: 800px;
+  float: right;
+}
+div.graph_legend {
+  width: 200px;
+  float: left;
+}
+h1 {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+h2 {
+  margin-left: 40px;
+}
+</style>
+</head>
+
+
+<body>
+
+<div id="wrap">
+  <div id="leftcol">
+    <b>Plugins</b>
+    <div id="plugins"></div>
+  </div>
+
+  <div id="grapharea">
+    <h1><%= hostname %></h1>
+    <div id="graphs">
+    </div>
+    <div id="footer">
+    Pupil is free software.  http://pupil-monitoring.github.com/pupil/
+    </div>
+  </div>
+</div>
+
+<script src="js/pupil.client.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"></script>
+<script src="js/rickshaw.min.js"></script>
+<script src="js/d3.v2.js"></script>
+<script>
+new PupilClient(window.location.host);
+</script>
+</body>
+</html>

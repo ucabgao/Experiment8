@@ -1,0 +1,72 @@
+<?
+  include( '_header.php' );
+?>
+  <link type="text/css" href="jquery.ui.combobox.css" rel="Stylesheet" />
+  <script src="jquery.ui.combobox.js"></script>
+  <script>
+    FAC(document).ready(function(){
+      FAC('.event-name').combobox({
+        'options': [
+          'login',
+          'login-fail',
+          'key-expired',
+          'logout'
+        ]
+      });
+      
+      FAC('#new-event').button().click(addEvent);
+      
+      FAC('#trigger-event').button().click(function(){
+        FAC.events.trigger( FAC('#trigger-event-name').val(), FAC('#trigger-event-data').val() );
+      });
+    });
+    
+    function addEvent() {
+      var eventName = FAC('#new-event-name').val();
+      var eventHandler = function(data){
+        FAC.displayMessage('highlight', '<strong>' + eventName + '</strong>: ' + data, 1000);
+      };
+      
+      // Register event with FAC
+      FAC.events.on(eventName , eventHandler);
+      
+      // Add event to event list display
+      FAC('<div>').addClass('event ui-widget-content').html(eventName).appendTo( FAC('#events') ).click(function(){
+        FAC(this).remove();
+        FAC.events.off(eventName, eventHandler);
+      }).hover(function(){
+        FAC(this).addClass('ui-state-highlight');
+      },function(){
+        FAC(this).removeClass('ui-state-highlight');
+      });
+    }
+  </script>
+  <style>
+    body { width: 800px; margin: auto; }
+    #new-event-wrap, #trigger-event-wrap { padding: .5em; margin-bottom: 1em; }
+    .ui-widget-header { padding: .5em; }
+    .event { padding: .5em; cursor: pointer; }
+  </style>
+  <div class="fac">
+    <div class="ui-widget">
+      <div class="ui-widget-header">Add a New Event Handler</div>
+      <div id="new-event-wrap" class="ui-widget-content">
+        Event: <input type="text" id="new-event-name" class="event-name" />
+        &nbsp; &nbsp;
+        <button id="new-event">Add Event</button>
+      </div>
+      <div class="ui-widget-header">Trigger an Event</div>
+      <div id="trigger-event-wrap" class="ui-widget-content">
+        Event: <input type="text"  id="trigger-event-name" class="event-name" />
+        &nbsp; &nbsp;
+        Data: <input type="input" id="trigger-event-data" />
+        &nbsp; &nbsp;
+        <button id="trigger-event">Trigger Event</button>
+      </div>
+      <div class="ui-widget-header">Events</div>
+      <div id="events"></div>
+    </div>
+  </div>
+<?
+  include( '_footer.php' );
+?>

@@ -1,0 +1,4 @@
+.fac-popopen-header { padding: .4em 1em; cursor: pointer; }
+
+.fac-popopen-details { padding: .4em 1em; display: none; }
+.fac-popopen-details-toggle { display: inline-block !important; margin-right: .5em; }

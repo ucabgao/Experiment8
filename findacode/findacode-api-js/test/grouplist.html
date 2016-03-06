@@ -1,0 +1,22 @@
+<?
+  include( '_header.php' );
+?>
+  <script type="text/javascript">
+    FAC.events.on('test-setup', function(){
+      FAC('#wrapper').grouplist();
+    });
+    FAC.events.on('test-destroy', function(){
+      FAC('#wrapper').grouplist('destroy');
+    });
+  </script>
+  <style>
+    body {
+      font-size: 16px;
+      width: 600px;
+      margin: auto;
+    }
+  </style>
+  <div id="wrapper"></div>
+<?
+  include( '_footer.php' );
+?>

@@ -1,0 +1,7 @@
+.fac-clear { clear: both; }
+
+.fac-dialog { padding: .2em; display: none; position: absolute; top: 0; z-index: 100; }
+.fac-dialog-header { padding: .2em; }
+.fac-dialog-content { padding: .4em; }
+.fac-dialog-buttons { text-align: right; }
+.fac-dialog-closeicon-wrap { float: right; cursor: pointer; }

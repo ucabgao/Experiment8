@@ -1,0 +1,46 @@
+<?
+  include( '_header.php' );
+?>
+  <script type="text/javascript">
+    FAC.events.on('test-setup', function(){
+      FAC("#crossacode").popopen({
+        'title': 'Cross-A-Code',
+        'autoOpen': true
+      }).crossacode({
+        'codeset': 'icd9v3',
+        'code': FAC("#code").val(),
+        'codeClick': codeClick,
+        'codeClass': 'custom-code'
+      });
+      
+      FAC("#code").on('keyup', function(e) {
+        var code = e.keyCode || e.which;
+        if( code == '13' ) {
+          showCode();
+        }
+      });
+    });
+    
+    FAC.events.on('test-destroy', function(){
+      FAC('#crossacode').crossacode('destroy').popopen('destroy');
+      FAC('#code').off('keyup');
+    });
+    
+    function showCode() {
+      FAC("#crossacode").crossacode('option', 'code', FAC("#code").val());
+    }
+    
+    function codeClick( code ) {
+      FAC.displayMessage('info', 'You click code ' + code.code + ': ' + code.descr, 2000 );
+    }
+  </script>
+	<style>
+		body { font-size: 16px; width: 800px; margin: auto; }
+    .custom-code { color: #1C94C4; }
+	</style>
+  <label>Enter an ICD-9-V3 code:<input id="code" value="00.60" /></label> <button onclick="showCode();">Show</button>
+  <br><br>
+  <div id="crossacode"></div>
+<?
+  include( '_footer.php' );
+?>

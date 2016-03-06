@@ -1,0 +1,152 @@
+.calendar-container
+{
+	max-width: 1000px;
+	margin: 0 auto;
+	font-family: "Calibri Light";
+	background-color: rgb(25, 25, 30);
+	border: 1px solid rgb(15, 15, 15);
+	border-radius: 15px;
+	overflow: hidden;
+	
+	/* Disable user selection */
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */     
+}
+
+.calendar-header
+{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: rgb(200, 200, 200);
+	font-weight: bold;
+}
+
+.calendar-current-month-container
+{
+	display: inline-block;
+	margin: 10px auto;
+	padding: 5px 10px;
+	font-size: 1.25rem;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.calendar-current-month-container:hover
+{
+	background-color: rgb(50, 50, 60);
+}
+
+.calendar-previous-month, .calendar-next-month
+{
+	position: absolute;
+	cursor: pointer;
+}
+
+.calendar-previous-month img:hover, .calendar-next-month img:hover
+{
+	background-color: rgb(70, 70, 80);
+}
+
+.calendar-previous-month
+{
+	left: 0;
+}
+
+.calendar-next-month
+{
+	right: 0;
+}
+
+.calendar-previous-month img, .calendar-next-month img
+{
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding: 5px;
+	background-color: rgb(50, 50, 60);
+	border-radius: 100px;
+}
+
+.calendar-days table
+{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	color: rgb(200, 200, 200);
+	font-size: 1.15rem;
+	font-weight: bold;
+}
+
+.calendar-days thead th
+{
+	padding: 0 0 8px 0;
+}
+
+.calendar-days th
+{
+	cursor: default;
+}
+
+.calendar-days table:not(th)
+{
+	border-spacing: 8px;
+	border-collapse: separate;
+}
+
+.calendar-days td
+{
+	width: 14.2857%;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 2px solid rgb(70, 70, 80);
+	border-radius: 100px;
+}
+
+/**************************************************************************************************/
+/* Utility Classes for background-fills and hover effects */
+
+.calendar-days .current-month
+{
+	color: rgb(175, 175, 175);
+	background-color: rgb(70, 70, 80);
+}
+
+.calendar-days .not-current-month
+{
+	color: rgb(75, 75, 80);
+}
+
+.calendar-days .today
+{
+	font-size: 1.2rem;
+	color: white;
+	background-color: rgb(125, 200, 25);
+	border: none;
+	overflow: auto;
+}
+
+.calendar-days .today-other-month
+{
+	color: rgb(125, 200, 25);
+	border: 2px solid rgba(125, 200, 25, 0.5);
+}
+
+.calendar-days td.current-month:hover:not(.today)
+{
+	background-color: rgba(255, 50, 100, 0.6);
+	border-color: rgb(150, 150, 150);
+}
+
+.calendar-days td.not-current-month:hover
+{
+	background-color: rgba(255, 50, 100, 0.25);
+	border-color: rgb(100, 100, 100);
+}

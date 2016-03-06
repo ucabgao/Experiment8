@@ -1,0 +1,9 @@
+.fac-groupinfo { overflow: auto; }
+
+.fac-groupinfo-label { font-weight: bold; }
+.fac-groupinfo-col1, .fac-groupinfo-col2 { float: left; margin: .5em 0; width: 50%; }
+
+.fac-groupinfo-edit-button { float: right; }
+
+.fac-groupinfo-editgroup-dialog-col1 { width: 35%; float: left; }
+.fac-groupinfo-editgroup-dialog-col2 { width: 65%; float: left; }

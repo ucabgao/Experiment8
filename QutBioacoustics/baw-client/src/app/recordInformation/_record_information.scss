@@ -1,0 +1,15 @@
+//@import "base.css.scss";
+
+baw-record-information {
+  display: inline-block;
+
+  font-family: Consolas, monaco, monospace;
+  font-size: smaller;
+
+  &>span {
+
+    &>span {
+      //color: nth($master-dark-2, 2);
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "name": "spm",
+  "version": "3.1.0-rc2",
+  "preferGlobal": "true",
+  "description": "Static Package Manager",
+  "author": "Hsiaoming Yang <me@lepture.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spmjs/spm.git"
+  },
+  "keywords": [
+    "seajs",
+    "module",
+    "cmd",
+    "spmjs",
+    "package",
+    "tool",
+    "command line",
+    "commonjs",
+    "component",
+    "bower",
+    "npm",
+    "browser"
+  ],
+  "dependencies": {
+    "archy": "~0.0.2",
+    "async": "~0.2.9",
+    "colorful": "~2.1.0",
+    "commander": "~1.3.2",
+    "exeq": "~0.4.0",
+    "form-data": "~0.1.2",
+    "fstream": "~0.1.25",
+    "fstream-ignore": "~0.0.7",
+    "glob": "~4.0.3",
+    "grunt": "~0.4.2",
+    "grunt-init": "~0.3.2",
+    "gulp": "~3.6.2",
+    "gulp-clean": "~0.3.0",
+    "gulp-cssmin": "~0.1.4",
+    "gulp-gunzip": "0.0.2",
+    "gulp-if": "~1.1.0",
+    "gulp-jsbeautify": "~0.1.1",
+    "gulp-uglify": "~0.2.1",
+    "gulp-untar2": "0.0.5",
+    "gulp-zip": "~0.3.4",
+    "inherits": "~1.0.0",
+    "jscoverage": "~0.3.8",
+    "lodash": "~2.4.1",
+    "mocha-browser-for-spm": "~0.2.3",
+    "multipipe": "~0.1.1",
+    "nico": "~0.5.1",
+    "request": "~2.36.0",
+    "requires": "~1.0.1",
+    "rimraf": "~2.2.5",
+    "semver": "~2.2.1",
+    "serve-spm": "~0.3.1",
+    "spmrc": "~1.0.0",
+    "tar": "~0.1.19",
+    "umi": "~0.4.0",
+    "vinyl-source-stream": "~0.1.0",
+    "win-spawn": "~2.0.0"
+  },
+  "devDependencies": {
+    "sinon": "*",
+    "jshint": "*",
+    "mocha": "*",
+    "should": "*",
+    "ls-archive": "~1.0.0",
+    "istanbul": "*",
+    "glob": "~4.0.0",
+    "gulp-unzip": "~0.1.1"
+  },
+  "bin": {
+    "spm": "bin/spm"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "preinstall": "node scripts/preinstall.js",
+    "test": "make test"
+  }
+}

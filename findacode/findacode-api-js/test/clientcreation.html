@@ -1,0 +1,25 @@
+<?
+  include( '_header.php' );
+?>
+  <link type="text/css" href="/widgets/v2/src/widgets/clientcreation/clientcreation.css" rel="Stylesheet" />
+  <script src="/widgets/v2/src/widgets/clientcreation/clientcreation.js" ></script>
+  <script type="text/javascript">
+    FAC(function(){
+      FAC.settings({
+        userType: 'dev'
+      });
+      
+      FAC('#wrapper').clientcreation();
+    });
+  </script>
+  <style>
+    body {
+      font-size: 16px;
+      width: 600px;
+      margin: auto;
+    }
+  </style>
+  <div id="wrapper"></div>
+<?
+  include( '_footer.php' );
+?>

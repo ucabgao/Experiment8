@@ -1,0 +1,10 @@
+.fac-userlist-userheader { padding: .4em 1em; cursor: pointer; }
+.fac-userlist-name-filter { width: 9em; }
+.fac-userlist-group-select { width: 8em; }
+
+.fac-userlist-footer { overflow: auto; }
+
+.fac-userlist-adduser-dialog { }
+.fac-userlist-adduser-button { float: right; }
+.fac-userlist-adduser-dialog-col1 { width: 35%; float: left; }
+.fac-userlist-adduser-dialog-col2 { width: 65%; float: left; }

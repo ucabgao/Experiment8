@@ -1,0 +1,53 @@
+<?
+  include( '_header.php' );
+?>
+  <script type="text/javascript">
+		FAC.events.on('test-setup', function(){
+			FAC('#search').search({ 
+        codeset: 'icd9v1',
+        codesets: [
+          'icd9v1',
+          'icd9v3',
+          'icd10cm',
+          'icd10pcs'
+        ],
+        codesetChange: function(e, codeset) {
+          FAC('#crossacode').crossacode('option', 'codeset', codeset);
+        },
+        resultButtons: [
+          {
+            label: 'Cross-A-Code',
+            icon: 'ui-icon-shuffle',
+            click: function(e) {
+              FAC('#crossacode').crossacode('option', 'code', e.data.code);
+            }
+          }
+        ]
+      });
+      FAC('#crossacode').popopen({
+        title: 'Cross-A-Code',
+        autoOpen: true
+      }).crossacode({
+        codeset: 'icd9v1'
+      });
+		});
+    
+    FAC.events.on('test-destroy', function(){
+        FAC('#search').search('destroy');
+        FAC('#crossacode').popopen('destroy').crossacode('destroy');
+      });
+  </script>
+	<style>
+		body {
+			font-size: 14px;
+      width: 1000px;
+      margin: auto;
+		}
+	</style>
+  <div style="overflow: auto;">
+    <div style="width: 540px; float: left;"><div id="search"></div></div>
+    <div style="width: 440px; float: right;"><div id="crossacode"></div></div>
+  </div>
+<?
+  include( '_footer.php' );
+?>

@@ -1,0 +1,6 @@
+.fac-accountlist-header { overflow: auto; }
+.fac-accountlist-limit-wrap { float: right; }
+.fac-accountlist-list { min-height: 300px; }
+.fac-accountlist-addaccount { float: right; }
+.fac-accountlist-footer { overflow: auto; }
+.fac-accountlist-loggedout-message { margin: 1em; text-align: center; }

@@ -1,0 +1,10 @@
+.fac-clear { clear: both; }
+
+#fac-messages { position: fixed; top: .5em; width: 400px; left: 50%; margin-left: -200px; }
+.fac-message { margin: .5em 0; padding: .2em 25px; }
+.fac-message-info { border: 1px solid #fcefa1; background: #fbf9ee; color: #363636; }
+.fac-message-error { border: 1px solid #cd0a0a; background: #fef1ec; color: #cd0a0a; }
+.fac-message .ui-icon-info, .fac-message .ui-icon-alert { display: block; float: left; margin: 2px 0 0 -20px; }
+.fac-message .ui-icon-close, .fac-message .ui-icon-circle-close { display: block; float: right; margin: 2px -20px 0 0; cursor: pointer; }
+
+.fac-label { padding: 0 .3em; }

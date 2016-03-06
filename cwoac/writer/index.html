@@ -1,0 +1,21 @@
+<!DOCTYPE html5>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>writer</title>
+    <link rel="stylesheet" href="writer.css" />
+    <script src="scripts/modernizr.js"></script>
+    <script src="scripts/writer.js"></script>
+    <script src="scripts/writer_features.js"></script>
+    <script src="scripts/writer_boxes.js"></script>
+    <script src="scripts/writer_band.js"></script>
+    <script src="scripts/writer_lines.js"></script>
+  </head>
+  <body onresize="writer.resize()">
+    <canvas id="theCanvas"></canvas>
+  </body>
+  <script>
+    // TODO:: Handle detection more cleanly, move this back into <head>
+    window.onload = writer.initialise();
+  </script>
+</html>

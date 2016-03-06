@@ -1,0 +1,13 @@
+#!/bin/bash
+
+startdirectory=`pwd`
+
+cd /srv/www/api/libs/js
+
+echo "Build api..."
+python build/build-api.py
+
+echo "Build widgets..."
+python build/build-widgets.py
+
+cd $startdirectory

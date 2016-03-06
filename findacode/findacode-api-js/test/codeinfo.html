@@ -1,0 +1,41 @@
+<?
+  $widget_theme = 'redmond';
+  include( '_header.php' );
+?>
+  <script type="text/javascript">
+		var codeInfo;
+    
+    FAC.events.on('test-setup', function(){
+      codeInfo = FAC('#codes').facdialog({
+        'title': 'Code Info'
+      }).codeinfo({
+        'afterLoad': function(e, o) {
+          FAC(this).facdialog({
+            'title': 'Code Info - ' + o.code
+          });
+        },
+        'spinnerOverlay': false
+      });
+    });
+    
+    FAC.events.on('test-destroy', function(){
+      codeInfo.facdialog('destroy').codeinfo('destroy');
+    });
+    
+    function showCode(code){
+      codeInfo.facdialog('open').codeinfo('loadCode',code,'icd10cm');
+    }
+  </script>
+	<style>
+    body { width: 500px; margin: auto; }
+	</style>
+	<div style="text-align: center;">
+    <button onclick="showCode('A00.0');">A00.0</button>
+    &nbsp;&nbsp;
+    <button onclick="showCode('A09');">A09</button>
+  </div>
+  <br />
+  <div id="codes"></div>
+<?
+  include( '_footer.php' );
+?>

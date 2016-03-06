@@ -1,0 +1,27 @@
+.fac-clear { clear: both; }
+
+.fac-clientproductlist-productheader { padding: .4em 1em; cursor: pointer; }
+
+.fac-clientproductlist-control-label { padding: 0 .2em 0 .4em; }
+.fac-clientproductlist-name-filter { width: 9em; }
+.fac-clientproductlist-group-select { width: 8em; }
+
+.fac-clientproductlist-productlist {min-height:150px;}
+
+.fac-clientproductlist-productdetails { padding: .4em 1em; display: none; }
+.fac-clientproductlist-productdetails.ui-widget-content { border-bottom: 0; border-top: 0; }
+.fac-clientproductlist-productdetails-toggle { display: inline-block !important; margin-right: .5em; }
+
+.fac-clientproductlist-activate-wrap { text-align: right; cursor: pointer; font-size: .85em; }
+
+.fac-clientproductlist-footer { overflow: auto; }
+
+.fac-clientproductlist-addproduct-dialog { }
+.fac-clientproductlist-addproduct-button { float: right; }
+.fac-clientproductlist-addproduct-dialog-col1 { width: 35%; float: left; }
+.fac-clientproductlist-addproduct-dialog-col2 { width: 65%; float: left; }
+
+.fac-clientproductlist-bundleproduct-dialog { }
+.fac-clientproductlist-bundleproduct-button { float: right; }
+.fac-clientproductlist-bundleproduct-dialog-col1 { width: 35%; float: left; }
+.fac-clientproductlist-bundleproduct-dialog-col2 { width: 65%; float: left; }

@@ -1,0 +1,35 @@
+<div ng-controller="AnnotationViewerCtrl" class="annotation-viewer-ctrl">
+
+    <div id="scroller">
+        <div class="tag-preview">
+            <ul>
+                <li ng-repeat="annotation in model.audioEvents"
+                    ng-class="{active: annotation.selected || annotation.hovering}"
+                    ng-style="{left: (positionLabel(annotation)) + 'px' }"
+                    ng-eval="tag = getTag(annotation)"
+                        >
+                    <span class="{{tag.typeOfTag}}">
+                      {{tag.text}}
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="annotation-viewer" id="annotation-viewer_{{$id}}">
+            <img ng-src="{{model.media.spectrogram.url}}" src=""
+                 ng-style="{width: model.converters.conversions.enforcedImageWidth, height: model.converters.conversions.enforcedImageHeight}">
+
+            <grid-lines configuration="gridConfig"></grid-lines>
+            <div class="annotationOverlay" id="spectrogramAnnotations_{{id}}"></div>
+            <div class="positionLine" baw-translate-x="positionLine()"
+                 ng-class="{hidden: !model.audioElement.canPlay}"
+                 draggie drag-options="dragOptions"
+                    >
+                <div class="grab-bottom-center grab-handle-tail grab-handle-angle-0"
+                        ></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="controls">
+    </div>
+</div>

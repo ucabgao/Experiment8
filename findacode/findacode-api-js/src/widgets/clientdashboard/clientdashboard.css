@@ -1,0 +1,14 @@
+.fac-clientdashboard-cells {
+  position:relative;
+}
+.fac-clientdashboard-cell{
+  //background-color:green;
+  position:absolute;
+  cursor:pointer;
+}
+.fac-clientdashboard-cellheader {
+  padding-left:.2em;
+}
+.fac-clientdashboard-cellbody {
+  padding-left:.2em;
+}

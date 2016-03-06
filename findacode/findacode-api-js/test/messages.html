@@ -1,0 +1,35 @@
+<?
+  include( '_header.php' );
+?>
+  <script type="text/javascript">
+		function displayMessage() {
+      var message = [{ 
+        'message': FAC('#message').val(), 
+        'type': FAC('#message-type').val(),
+        'timeout': FAC('#timeout').val()
+      }];
+      FAC.displayMessages(message);
+    }
+  </script>
+	<style>
+		body {
+			font-size: 16px;
+      width: 600px;
+      margin: auto;
+		}
+	</style>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <label>Type:&nbsp;&nbsp;<select id="message-type"><option value="info">Info</option><option value="error">Error</option></select></label>
+  <br><br>
+  <label>Message:&nbsp;&nbsp;<textarea id="message">Info message</textarea></label>
+  <br><br>
+  <label>Timeout:&nbsp;&nbsp;<input type="text" id="timeout" /></label>
+  <br><br>
+  <button onclick="displayMessage()">Submit</button>
+<?
+  include( '_footer.php' );
+?>

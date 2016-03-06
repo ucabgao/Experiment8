@@ -1,0 +1,56 @@
+.fac-clear { clear: both; }
+
+.fac-search { position: relative; }
+
+.fac-search-effects-transfer { border: .1em dotted #999; }
+
+.fac-search-bar { width: 100%; margin: 0px; }
+
+.fac-search-settings-td { /*width: 8.5em;*/ white-space: nowrap }
+.fac-search-settings-button { margin-right: .3em !important; }
+.fac-search-codeset-select { width: 8.5em; }
+
+.fac-search-box-td { padding-right: 2.2em; width: 100%;}
+.fac-search-box { color: blue; border-width: 1px; width: 100%; padding: .4em 1em; margin: 2px 1px; line-height: 1.4; }
+.fac-search-button-td { //width: 70px; }
+.fac-search-default-text { font-style: italic; }
+
+.fac-search-noresults { margin-top: 3em; }
+
+.fac-search-spelling-wrap { display: none; font-size: .8em; }
+.fac-search-spelling-header { padding: .4em 1em; cursor: pointer; }
+.fac-search-spelling-header .ui-icon-info { float: left; margin-right: .3em; }
+.fac-search-spelling-header-state-icon { float: right; margin-left: .3em; }
+.fac-search-spelling-summary { padding-left: .3em; }
+.fac-search-spelling-details-wrapper { display: none; padding: 0 1em .4em 1em; border-top: 0px !important; }
+.fac-search-spelling-details-wrapper .ui-multiselect { margin: .3em; }
+.fac-search-spelling-word { margin: .3em; display: inline-block; }
+.fac-search-spelling-search { float: right; }
+
+.fac-search-text-h { font-weight: bold; padding-top: 3em; }
+.fac-search-text-p { padding: .2em 0 0 0; }
+.fac-search-text-mono { font-family: monospace, courier new; }
+
+.fac-search-results-title { text-align: center; padding: .4em 1em; }
+.fac-search-results-list { min-height: 23em; }
+.fac-search-results-container { padding: .4em 1em; }
+.fac-search-result-header { padding: .4em 1em; margin-top: .2em; overflow: auto; }
+.fac-search-result-header-clickable { cursor: pointer; }
+.fac-search-result-descr { padding: .4em 1em; border-top: 0px !important; }
+
+.fac-search-noresults-query { font-weight: bold; }
+
+.fac-search-result-buttons { float: right; font-size: .7em; }
+.fac-search-custom-result-button { padding: 0 5px; }
+/* .fac-search-custom-result-button-wrapper { float: right; } */
+/* .fac-search-custom-result-button-image { cursor: pointer; vertical-align: middle; } */
+
+.fac-search-results-pager { text-align: center; margin-top: .4em; }
+.fac-search-page { cursor: pointer; display: inline-block; padding: .2em .5em; margin: 0 .3em; }
+
+.fac-search-powered { text-align: right; font-size: .5em;}
+
+.fac-search-settings-dialog {  }
+.fac-search-settings-wrapper { margin: .6em 0; }
+.fac-search-settings-label { } 
+.fac-search-settings-label-text { margin-right: .5em; }

@@ -1,0 +1,50 @@
+<?
+  include( '_header.php' );
+?>
+  <script type="text/javascript">
+    FAC.events.on('test-setup', function(){
+      FAC('#context_table').codeactions({
+        codeset: 'icd10cm',
+        menu: false,
+        regexFind: true,
+        actions: [
+          {
+            'title': 'Code Info',
+            'uiIcon': 'ui-icon-comment',
+            'click': function(event, elem, code, codeset) {
+              FAC.displayMessage('info', code, 2000);
+            }
+          }
+        ]
+      });      
+    });
+    FAC.events.on('test-destroy', function(){
+      FAC('#context_table').codeactions('destroy');
+    });
+  </script>
+	<style>
+		body {
+			width: 900px;
+      margin: auto;
+		}
+		#messages {
+			margin: 30px 200px;
+			display: none;
+			padding: .4em 1em;
+		}
+	</style>
+	<table style="margin-left:3em;" id="context_table"><tbody><tr><th class="th-list-l" colspan="3">Code(s)</th><td>&nbsp;</td><td class="th-list-l" style="width:600px;">Description</td></tr><tr><td style="text-align:right">A00.0</td><td>&nbsp;</td><td>A09&nbsp;&nbsp;</td><td>&nbsp;</td><td colspan="2">A00-A09 Intestinal infectious diseases (A00-A09)</td></tr>
+  <tr><td style="text-align:right">A15.0</td><td>&nbsp;</td><td>A19.9&nbsp;&nbsp;</td><td>&nbsp;</td><td colspan="2">A15-A19 Tuberculosis (A15-A19)</td></tr>
+  <tr><td style="text-align:right">A20.0</td><td>&nbsp;</td><td>A28.9&nbsp;&nbsp;</td><td>&nbsp;</td><td colspan="2">A20-A28 Certain zoonotic bacterial diseases (A20-A28)</td></tr>
+  <tr><td style="text-align:right">A30.0</td><td>&nbsp;</td><td>A49.9&nbsp;&nbsp;</td><td>&nbsp;</td><td colspan="2">A30-A49 Other bacterial diseases (A30-A49)</td></tr>
+  <tr><td style="text-align:right">A50.01</td><td>&nbsp;</td><td>A64&nbsp;&nbsp;</td><td>&nbsp;</td><td colspan="2">A50-A64 Infections with a predominantly sexual mode of transmission (A50-A64)</td></tr>
+  <tr><td style="text-align:right">A65</td><td>&nbsp;</td><td>A69.9&nbsp;&nbsp;</td><td>&nbsp;</td><td colspan="2">A65-A69 Other spirochetal diseases (A65-A69)</td></tr>
+  <tr><td style="text-align:right">A70</td><td>&nbsp;</td><td>A74.9&nbsp;&nbsp;</td><td>&nbsp;</td><td colspan="2">A70-A74 Other diseases caused by chlamydiae (A70-A74)</td></tr>
+  <tr><td style="text-align:right">A75.0</td><td>&nbsp;</td><td>A79.9&nbsp;&nbsp;</td><td>&nbsp;</td><td colspan="2">A75-A79 Rickettsioses (A75-A79)</td></tr>
+  <tr><td style="text-align:right">A80.0</td><td>&nbsp;</td><td>A89&nbsp;&nbsp;</td><td>&nbsp;</td><td colspan="2">A80-A89 Viral and prion infections of the central nervous system (A80-A89)</td></tr>
+  <tr><td style="text-align:right">A90</td><td>&nbsp;</td><td>A99&nbsp;&nbsp;</td><td>&nbsp;</td><td colspan="2">A90-A99 Arthropod-borne viral fevers and viral hemorrhagic fevers (A90-A99)</td></tr>
+  </tbody></table>
+	<div class="fac"><div id="messages" class="ui-state-highlight"></div></div>
+<?
+  include( '_footer.php' );
+?>

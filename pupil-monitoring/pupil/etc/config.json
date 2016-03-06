@@ -1,0 +1,10 @@
+{
+  "plugins": ["procstat","net"],
+  "pluginConfig": {
+    "mysql": {
+      "username": "root",
+      "password": "",
+      "host": "localhost"
+    }
+  }
+}

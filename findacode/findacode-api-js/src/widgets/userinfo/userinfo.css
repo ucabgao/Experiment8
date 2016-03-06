@@ -1,0 +1,9 @@
+.fac-userinfo { overflow: auto; }
+
+.fac-userinfo-label { font-weight: bold; }
+.fac-userinfo-col1, .fac-userinfo-col2 { float: left; margin: .5em 0; width: 50%; }
+
+.fac-userinfo-edit-button { float: right; }
+
+.fac-userinfo-edituser-dialog-col1 { width: 35%; float: left; }
+.fac-userinfo-edituser-dialog-col2 { width: 65%; float: left; }

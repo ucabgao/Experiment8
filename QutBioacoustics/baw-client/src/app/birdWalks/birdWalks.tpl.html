@@ -1,0 +1,48 @@
+<div class="row" data-ng-controller="BirdWalksCtrl">
+
+    <div class="col-sm-6 col-md-3" data-ng-repeat="(id, walkSpec) in spec.birdWalkSpec.walks">
+        <div class="thumbnail">
+            <img data-ng-src="{{$parent.imagesPath + $parent.spec.birdWalkSpec.locations[walkSpec.locationName].smallImageName}}"
+                 alt="{{walkSpec.name}}" class="img-responsive" title="{{$parent.spec.birdWalkSpec.locations[walkSpec.locationName].name}}">
+
+            <div class="caption">
+                <h3>{{walkSpec.name}}
+                    <small>{{walkSpec.waypoints.length}} waypoint(s)</small>
+                </h3>
+                <p>{{walkSpec.description}}</p>
+
+                <p>
+                    <a ng-href="birdWalks/{{walkSpec.id}}" class="btn btn-default" role="button">View Bird Walk Details</a>
+                </p>
+
+                <p>
+                    <small class="text-muted">
+                    Image Source:
+                    <a rel="nofollow" data-ng-href="{{$parent.spec.birdWalkSpec.locations[walkSpec.locationName].backgroundImageAttributionLink}}">
+                        {{$parent.spec.birdWalkSpec.locations[walkSpec.locationName].backgroundImageAttribution}}
+                    </a>
+                        </small>
+                </p>
+                <!--
+                        <h3>{{$parent.spec.birdWalkSpec.locations[walkSpec.locationName].name}}</h3>
+
+                        <p>{{$parent.spec.birdWalkSpec.locations[walkSpec.locationName].locationDescription}}
+                            <a data-ng-href="{{$parent.spec.birdWalkSpec.locations[walkSpec.locationName].locationDescriptionAttributionLink}}"
+                               class="small">
+                                {{$parent.spec.birdWalkSpec.locations[walkSpec.locationName].locationDescriptionAttribution}}
+                            </a>
+                        </p>
+
+                        <h4>{{$parent.spec.birdWalkSpec.locations[walkSpec.locationName].environmentType}}</h4>
+
+                        <p>{{$parent.spec.birdWalkSpec.locations[walkSpec.locationName].environmentDescription}}
+                            <a data-ng-href="{{$parent.spec.birdWalkSpec.locations[walkSpec.locationName].environmentDescriptionAttributionLink}}"
+                               class="small">
+                                {{$parent.spec.birdWalkSpec.locations[walkSpec.locationName].environmentDescriptionAttribution}}
+                            </a>
+                        </p>
+                            -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,69 @@
+#!/usr/bin/env node
+
+require('colorful').colorful();
+var commander = require('commander');
+var spm = require('..');
+var build = spm.build;
+var file = spm.sdk.file;
+var log = spm.log;
+
+commander.usage('[options]');
+commander.version(require('../package').version);
+
+commander
+  .option('-v, --verbose', 'show more logging')
+  .option('-s, --src [source dir]', 'input directory, default: current working directory')
+  .option('-d, --dest [destination dir]', 'output directory, default: dist')
+  .option('-f, --force', 'force option')
+  .option('--include [include]', 'determine which files will be included, optional: self, relative, all, standalone')
+  .option('--ignore [ignore]', 'determine which id will not be transported')
+  .option('--skip [skip]', 'determine which id will not be parsed when analyse')
+  .option('--idleading [idleading]', 'prefix of module name, default: {{name}}/{{version}}')
+  .option('--zip', 'archive by zip')
+  .parse(process.argv);
+
+if (commander.verbose) {
+  log.level = 'debug';
+}
+
+console.log();
+var p = file.readJSON('package.json');
+if (!p || !p.spm) {
+  log.error('miss', 'package.json or "spm" key');
+  process.exit(2);
+}
+
+var info = ('build ' + p.name + '@' + p.version).to.magenta.color;
+var begin = Date.now();
+log.info('start', info);
+
+var args = {
+  dest: commander.dest,
+  cwd: commander.src,
+  include: commander.include,
+  ignore: commander.ignore,
+  skip: commander.skip,
+  idleading: commander.idleading,
+  zip: commander.zip,
+  force: commander.force,
+  install: true
+};
+
+if (args.ignore) {
+  args.ignore = args.ignore.split(',');
+}
+
+build(args, function(err) {
+  if (err) {
+    log.error('error', err.message);
+    log.debug('error', err.stack);
+    process.exit(1);
+  }
+
+  log.info('finish', info + showDiff(begin));
+});
+
+function showDiff(time) {
+  var diff = Date.now() - time;
+  return (' (' + diff + 'ms)').to.gray.color;
+}

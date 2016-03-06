@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>OpenKaya Tournament creator</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+      <h1>Create a tournament</h1>
+      <form id="create_tournament" action="create_tournament" method=post>
+        Tournament System:
+        <select id="system" name="system">
+            <option value="SingleElimination">Single Elimination</option>
+            <option value="DoubleElimination">Double Elimination</option>
+            <option value="SwissTournament">Swiss</option>
+            <option value="McMahonTournament">Mc Mahon</option>
+            <option value="RoundRobinTournament">Round Robin</option>
+            <option value="SingleEliminationTeam">Single Elimination (Team)</option>
+        </select><br/>
+        Tournament name: <input type="text" name="name" id="name" required="true" /><br/>
+        <input type="submit" value="Submit" />
+      </form>
+    </body>
+</html>

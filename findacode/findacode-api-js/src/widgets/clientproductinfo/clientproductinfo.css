@@ -1,0 +1,12 @@
+.fac-clientproductinfo-header { padding: .4em 1em; cursor: pointer; }
+
+.fac-clientproductinfo-details { padding: .4em 1em; display: none; }
+.fac-clientproductinfo-details-toggle { display: inline-block !important; margin-right: .5em; }
+
+.fac-clientproductinfo-label { font-weight: bold; }
+.fac-clientproductinfo-col1, .fac-clientproductinfo-col2 { float: left; margin: .5em 0; width: 50%; }
+
+.fac-clientproductinfo-edit-button { float: right; }
+
+.fac-clientproductinfo-edituser-dialog-col1 { width: 35%; float: left; }
+.fac-clientproductinfo-edituser-dialog-col2 { width: 65%; float: left; }

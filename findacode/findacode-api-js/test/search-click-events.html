@@ -1,0 +1,49 @@
+<?
+  include( '_header.php' );
+?>
+  <script type="text/javascript">
+		FAC.events.on('test-setup', function(){
+			FAC('#search').search({
+				resultButtons:[
+					{
+            'src': 'http://www.findacode.com/static/images/kpdf.png',
+            'title': 'View',
+            'click': function(event){	
+							showMessage('You clicked on the custom button for code ' + event.data.code + '.'); 
+						}
+					}
+				],
+				resultClick: function(event){
+					showMessage('You clicked on code ' + event.data.code + '.'); 
+				}
+			});
+		});
+    
+    FAC.events.on('test-destroy', function(){
+      FAC('#search').search('destroy');
+    });
+		
+		function showMessage(message) {
+      FAC.displayMessage('info', message, 2000); 
+    }
+  </script>
+	<style>
+		body {
+			font-size: 16px;
+		}
+		#search {
+			width: 600px;
+			margin: auto;
+		}
+		#messages {
+			width: 600px;
+			margin: 30px auto;
+			display: none;
+			padding: .4em 1em;
+		}
+	</style>
+	<div id="search">FAC Search Box</div>
+	<div class="fac"><div id="messages" class="ui-state-highlight"></div></div>
+<?
+  include( '_footer.php' );
+?>

@@ -1,0 +1,36 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'mechanize'
+require 'json'
+require 'yaml'
+require File.expand_path("../lib/kayabot", File.dirname(__FILE__))
+require File.expand_path("../lib/gg", File.dirname(__FILE__))
+$0='kayabot'
+
+@url = ""
+
+if ARGV.length > 0
+  if ARGV.length == 1
+    config_file = ARGV.first
+    if File.exists?(config_file)
+      config = YAML.load_file(config_file)
+      if config["url"] && config["user"] && config["pass"] && config["title"] && config["size"]
+        sz = config["size"].to_i
+        raise "Invalid size!. only 9,13,19 are supported" unless sz == 9 || sz == 13 || sz == 19
+        k = KayaBot.new(config)
+        k.listener_loop
+      else
+        $stderr.puts "Invalid config file. url,user, pass, title, size required."
+      end
+    else
+      $stderr.puts "File does not exist."
+    end
+  elsif ARGV.length >= 3
+    k = KayaBot.new(ARGV[0], ARGV[1], ARGV[2])
+    k.listener_loop
+  end
+else
+    puts "Usage:\n - kayabot <yaml_config_file>\n - kayabot <url> <bot_nickname> <password>"
+    puts "For redirecting output: kayabot <args> 1> output.log 2> errors.log"
+end
