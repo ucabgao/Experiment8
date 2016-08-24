@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+wmde/DataValuesJavascript,70,5f8ad46a52e4b228f870a124f79b8ffb0f24d0fc,TypeScript,Undetectable,"EIS: type signature does not change.",33.0
