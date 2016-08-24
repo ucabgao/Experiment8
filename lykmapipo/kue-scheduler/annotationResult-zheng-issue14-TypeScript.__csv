@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+lykmapipo/kue-scheduler,14,3c1e8aaf5136e7d8b940fa0320bb9665880e9808,TypeScript,Undetectable,"EIS: wrongly loop against job.progress, which leads to a wrong hash.",256.0
