@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+gista/summer-cesta-snp,46,98e038164aa503907f4260f72854a7fcc0f7e70b,Flow,Undetectable,"String errors: wrong href of gpx.",13.0
