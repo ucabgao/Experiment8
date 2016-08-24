@@ -1,3 +1,27 @@
+/* @flow */
+
+interface w {
+    location:l;
+    open:any;    
+}
+
+interface l {
+    href:string;
+}
+
+interface p {
+    attr(s: string) : string;
+    next:any;
+}
+
+var window:w = {
+    location: {
+        href: '123'
+    }, 
+    open: {}       
+};
+
+
 // ==UserScript==
 // @name        Rightmove Enhancement Suite
 // @namespace   https://github.com/chigley/
@@ -74,8 +98,8 @@ $(window).bind('keyup', function(e) {
         }
     } else if (code == 76) {
         // l
-        var currentPage = $("#sliderBottom .current").parent();
-        var nextPage = currentPage.next().find("a");
+        var currentPage:p = $("#sliderBottom .current").parent();
+        var nextPage:p = currentPage.next().find("a");
         if (nextPage.length == 1)
             window.location = nextPage.attr("href");
     } else if (code == 13) {
