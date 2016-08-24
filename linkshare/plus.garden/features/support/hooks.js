@@ -1,3 +1,5 @@
+/* @flow */
+
 var hooks = function () {
 
     this.Before(function (callback) {

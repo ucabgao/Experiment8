@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+linkshare/plus.garden,8,1023ac331d87f27841508992a6c96a39bc4c9261,Flow,Undetectable,"EIS: both properties, Garden and garden, exist. ",17.0
