@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+lamby/strava-running-tss-estimator,1,786ec95fa610f0b4569f2632d0813e6f54e69328,Flow,Undetectable,"EIS: changing from statements at global scope to a call of function expression cannot be detected by Flow.",12.0
