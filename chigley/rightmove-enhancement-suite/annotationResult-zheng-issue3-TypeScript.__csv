@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+chigley/rightmove-enhancement-suite,3,baa8792306b4775d577ac3cb7fc359ac034b3e8e,TypeScript,Detectable,"TypeScript is able to detect that window.location is a constant or a read-only property, therefore cannot be in the left-hand side of assignment.",101.0
