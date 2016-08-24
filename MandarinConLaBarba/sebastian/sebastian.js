@@ -1,3 +1,5 @@
+/* @flow */
+
 /*jshint loopfunc:true*/
 (function(root, factory) {
     // Set up appropriately for the environment.

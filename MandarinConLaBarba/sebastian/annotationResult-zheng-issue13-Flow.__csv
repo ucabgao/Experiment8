@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+MandarinConLaBarba/sebastian,13,d3cc824101d78f972c1f2dbd4f604b21278678bc,Flow,Detectable,"Flow is able to detect that callable signature 'self.defaultSuccessDelegate' cannot be found in object literal of 'Flow'.",63.0
