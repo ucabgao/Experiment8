@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+theintern/intern,92,c77dac8e19ee4c4490a5b9f8a42d71740f665c35,Flow,Undetectable,"Incomplete predicate: forgot to handle two cases in the else if statement.",25.0
