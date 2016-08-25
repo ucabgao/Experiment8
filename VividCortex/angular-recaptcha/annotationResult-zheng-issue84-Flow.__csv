@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+VividCortex/angular-recaptcha,84,3ae66b762d0209ac9bf5d0be9a7a929978198b39,Flow,Undetectable,"EIS: a missing functionality causes a further type error. Worth investigating.",265.0
