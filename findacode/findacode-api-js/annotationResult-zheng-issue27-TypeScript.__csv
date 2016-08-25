@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+findacode/findacode-api-js,27,7a27b068a514705f2125bf66351dc238f5095f38,TypeScript,Undetectable,"UI error. Autocomplete is not destroying the fac wrapper for its menu",82.0
