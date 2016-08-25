@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+jsdom/js-symbol-tree,5,,TypeScript,Undetectable,"EIS: TSC cannot detect this error of duplicating definition.",105.0
