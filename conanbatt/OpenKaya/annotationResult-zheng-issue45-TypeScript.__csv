@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+conanbatt/OpenKaya,45,1815734fe30a3eed0765583623448ac74d97d19a,TypeScript,Detectable,"By saying the index can be undefined, TSC detects the error.",239.0
