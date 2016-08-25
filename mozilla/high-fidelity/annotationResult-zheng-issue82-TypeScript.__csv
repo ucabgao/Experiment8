@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+mozilla/high-fidelity,82,5947c14ec28d613fbd9158c8d9aa869c01ff8587,TypeScript,Undetectable,"String error: image URL is wrong.",30.0
