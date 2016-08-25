@@ -1,9 +1,13 @@
+/* @flow */
+
+type F = (b:Object, o: any) => any;
+
 var camelize = require('camelize')
 var cspBuilder = require('content-security-policy-builder')
 var platform = require('platform')
 var containsFunction = require('./lib/contains-function')
 var getHeaderKeysForBrowser = require('./lib/get-header-keys-for-browser')
-var transformDirectivesForBrowser = require('./lib/transform-directives-for-browser')
+var transformDirectivesForBrowser: F = require('./lib/transform-directives-for-browser')
 var parseDynamicDirectives = require('./lib/parse-dynamic-directives')
 var ALL_HEADERS = require('./lib/all-headers')
 
@@ -18,7 +22,7 @@ module.exports = function csp (options) {
   }
 
   return function csp (req, res, next) {
-    var userAgent = req.headers['user-agent']
+    var userAgent:?Object = req.headers['user-agent']
 
     var browser
     if (userAgent) {

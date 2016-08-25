@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+helmetjs/csp,28,97e199360f4fa093e739832502619db1e7323031,Flow,Detectable,"Using type alias to define a function type and then use it to annotate a function requiring the first argument to be non-null.",257.0
