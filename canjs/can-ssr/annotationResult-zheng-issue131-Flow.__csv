@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+canjs/can-ssr,131,42009adb7ecac5121bd9e4ada2cd41854c29f30f,Flow,Detectable,"Flow simply detects it.",37.0

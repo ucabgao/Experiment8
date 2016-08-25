@@ -1,3 +1,5 @@
+/* @flow */
+
 /*global canWait:false */
 var Steal = require("steal");
 var loadExtension = require("./load_extension");
