@@ -1,6 +1,14 @@
+/* @flow */
+
 window.pupilGraphers = {};
 window.pupilClients = {};
 window.pupilPlugins = {};
+
+declare function parseInt (x: string, y: number) :number;
+
+interface a {
+    data: Array<string | number>;
+}
 
 function PupilUpdatePluginList() {
   var cont = document.getElementById('plugins');
@@ -63,7 +71,7 @@ function PupilGrapher(host, name, data) {
     gelement.appendChild(container);
   };
 
-  this.addData = function (data) {
+  this.addData = function (data:a) {
     var i = 0;
     Object.keys(data.data).forEach(function (d) {
       var realval;
