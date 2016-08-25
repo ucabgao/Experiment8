@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+ucym/Brackets-CSS-Class-Code-hint,8,7db316f96a25f3947595ea6b7ea70dc6e1a306ac,TypeScript,Undetectable,"Parsing error: wrong regular expression causes the matching to fail and returns a null. This further leads to a type error.",17.0
