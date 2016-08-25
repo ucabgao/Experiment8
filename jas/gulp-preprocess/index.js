@@ -1,9 +1,11 @@
+/* @flow */
+
 var _     = require('lodash');
 var map   = require('map-stream');
 var pp    = require('preprocess');
 var path  = require('path');
 
-module.exports = function (options) {
+module.exports = function (options: ?Object) {
   var opts    = _.merge({}, options);
   var context = _.merge({}, process.env, opts.context);
 
