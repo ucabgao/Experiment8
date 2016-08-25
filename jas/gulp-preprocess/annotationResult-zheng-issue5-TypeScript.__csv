@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+jas/gulp-preprocess,5,cf216a19efb2560bb1400c955500cd440f892a09,TypeScript,Detectable,"Construct a shim and use it in combination with undefined. This annotation enables typescript to detect the bug.",188.0
