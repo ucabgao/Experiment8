@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+ForbesLindesay/spawn-sync,8,39ede59794623ae71f8f35311aec46015b9678e2,Flow,Undetectable,"MIssing branch: forgot to handle the case when buf is empty, which is not visible to these two type systems.",268.0
