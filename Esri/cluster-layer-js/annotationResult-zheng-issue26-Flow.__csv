@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+Esri/cluster-layer-js,26,f690e80c091cd752351d12b84845b60bfadf01de,Flow,Undetectable,"EIS: this seems to be a bug in Flow, since it complains that it cannot resolve the name of a parameter within that parameter's function.",317.0

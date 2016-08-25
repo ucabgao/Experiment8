@@ -1,3 +1,16 @@
+/* @flow */
+
+        interface ccc {
+            x :any;
+               y:any;
+                 attributes:aaa;
+        }
+
+        interface aaa {
+            clusterCount: number;
+        }
+
+
 define([
     'dojo/_base/declare',
     'dojo/_base/array',
@@ -848,7 +861,7 @@ define([
         },
 
         // Add graphic and to layer
-        _showCluster: function(c) {
+        _showCluster: function(c:ccc) {
             var point = new Point(c.x, c.y, this._sr);
 
             var g = new Graphic(point, null, c.attributes);
