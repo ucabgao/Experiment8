@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+cwoac/writer,14,ae215d7febf9965aaa7ce0b81cb55101609d02b5,Flow,Undetectable,"UI error. Lines are not cleared.",32.0
