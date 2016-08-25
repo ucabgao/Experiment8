@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+rileyjshaw/own-this-website,2,34892c90041be13089100de5974622afd91e8aaf,Flow,Undetectable,"EIS: malfunction: The browser handles the blur event before the submit (ugh), so the form closes without sending the name to the server. Not type related. ",94.0
