@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+pupil-monitoring/pupil,14,8c45458a00d29b4122352835c2e7f5bce9203f5a,TypeScript,Undetectable,"EIS: TypeScript does not understand this annotation.",131.0
