@@ -1,3 +1,5 @@
+/* @flow */
+
 //Scoreboard 
 //Store a board with marked as dead/alive info
 //Provide a toggle dead/alive feature
@@ -1960,8 +1962,8 @@ BoardExactAnalysis.prototype.checkMultipleEyes = function() {
 	}
 	for(var i = 0; i< key2Ar.length-1; i++) {
 		for(var j = i+1; j< key2Ar.length; j++) {
-			var i0 = map[key2Ar[i]][0];
-			var i1 = map[key2Ar[i]][1];
+			var i0: ?(string | number) = map[key2Ar[i]][0];
+			var i1: ?(string | number) = map[key2Ar[i]][1];
 			var j0 = map[key2Ar[j]][0];
 			var j1 = map[key2Ar[j]][1];
 			if( (i0 == j0 && i1 == j1) || (i0 == j1 && i1 == j0) ) {//two eyes, connect i0 and i1, mark as alive
