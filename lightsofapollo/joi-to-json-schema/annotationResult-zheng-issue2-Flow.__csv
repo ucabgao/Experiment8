@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+lightsofapollo/joi-to-json-schema,2,9e5637625f32e9d852b0e394e70196d08649bac5,Flow,Undetectable,"EIS: Flow is considerably weak in detecting errors about property access using string literals.",52.0

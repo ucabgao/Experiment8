@@ -1,3 +1,5 @@
+/* @flow */
+
 import assert from 'assert';
 
 // Converter helpers for Joi types.
