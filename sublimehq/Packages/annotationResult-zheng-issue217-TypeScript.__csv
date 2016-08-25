@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+sublimehq/Packages,217,2231d8a7593ab58cc81353bd49327f3d46ec7703,TypeScript,Undetectable,"Regex error: Forward slash in regex character classes doesn't need to be escaped by a backslash.",69.0
