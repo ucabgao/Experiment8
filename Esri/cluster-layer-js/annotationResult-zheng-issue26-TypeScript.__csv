@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+Esri/cluster-layer-js,26,f690e80c091cd752351d12b84845b60bfadf01de,TypeScript,Undetectable,"EIS: it's hard to break the coercion.",161.0
