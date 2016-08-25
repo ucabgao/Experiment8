@@ -1,3 +1,5 @@
+/* @flow */
+
 var file = require('./file');
 var path = require('path');
 var fs = require('fs');

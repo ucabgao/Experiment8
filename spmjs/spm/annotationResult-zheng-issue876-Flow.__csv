@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+spmjs/spm,876,6e17e067ef3a1b285c04aa3b36f2be61b28b52ef,Flow,Undetectable,"EIS: According to its official documentation, existFile takes a string as argument. We need to distinguish between a dir and a file using this string, which is not possible in the two type systems under study.",158.0
