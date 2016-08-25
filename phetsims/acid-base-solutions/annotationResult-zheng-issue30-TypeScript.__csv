@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+phetsims/acid-base-solutions,30,6a0e67e7975b989dedbe480f930f0622495ea1ce,TypeScript,Undetectable,"UI error: control panels don't fit on screen.",30.0
