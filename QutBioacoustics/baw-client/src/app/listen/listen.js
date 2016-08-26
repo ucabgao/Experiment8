@@ -1,3 +1,5 @@
+/* @flow */
+
 angular.module('bawApp.listen', ['decipher.tags', 'ui.bootstrap.typeahead'])
 
     .controller('ListenCtrl', ['$scope',
