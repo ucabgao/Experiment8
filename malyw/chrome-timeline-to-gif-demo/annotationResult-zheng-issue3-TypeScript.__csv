@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+malyw/chrome-timeline-to-gif-demo,3,ac3d8e62c8728e035527b9d27b1023bd43435104,TypeScript,Undetectable,"Unnecessary branch: causes uploading file to be always blocked in Chrome on Windows",132.0
