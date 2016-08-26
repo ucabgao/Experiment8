@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+UnaviaMedia/SimpleCalendar,3,7904de5ffed0427c3f4f37452c5c23a1caf3a46c,TypeScript,Undetectable,"Incomplete predicate. ",35.0
