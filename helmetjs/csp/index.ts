@@ -1,4 +1,4 @@
-type F = (b:{}, o: any) => any;
+type F = (b:Object, o: any) => any;
 
 var camelize:any// = require('camelize')
 var cspBuilder:any// = require('content-security-policy-builder')
@@ -21,9 +21,9 @@ module.exports = function csp (options) {
   }
 
   return function csp (req, res, next) {
-  var userAgent: {} | null | undefined = req.headers['user-agent']
+  var userAgent: Object | null | undefined = req.headers['user-agent']
 
-  var browser: null | undefined | {}
+  var browser: null | undefined | Object
     if (userAgent) {
       browser = platform.parse(userAgent)
     }

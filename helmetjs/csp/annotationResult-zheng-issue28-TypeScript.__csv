@@ -1,2 +1,3 @@
 Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
 helmetjs/csp,28,97e199360f4fa093e739832502619db1e7323031,TypeScript,Detectable,"Construct a hacky annotation to detect that bug, less elegant than Flow.",253.0
+helmetjs/csp,28,97e199360f4fa093e739832502619db1e7323031,TypeScript,Detectable,"Improving annotations.",387.0
