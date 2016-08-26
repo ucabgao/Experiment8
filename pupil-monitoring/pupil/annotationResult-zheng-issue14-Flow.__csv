@@ -1,2 +1,3 @@
 Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
 pupil-monitoring/pupil,14,8c45458a00d29b4122352835c2e7f5bce9203f5a,Flow,Detectable,"I have to provide a type signature for parseInt to catch this bug.",232.0
+pupil-monitoring/pupil,14,8c45458a00d29b4122352835c2e7f5bce9203f5a,Flow,Detectable,"improving annotation.",20.0

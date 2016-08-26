@@ -8,6 +8,7 @@ declare function parseInt (x: string, y: number) :number;
 
 interface a {
     data: Array<string | number>;
+          time: any;
 }
 
 function PupilUpdatePluginList() {
