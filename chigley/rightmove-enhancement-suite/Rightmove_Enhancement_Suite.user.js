@@ -14,12 +14,7 @@ interface p {
     next:any;
 }
 
-var window:w = {
-    location: {
-        href: '123'
-    }, 
-    open: {}       
-};
+declare var window:w;
 
 
 // ==UserScript==
